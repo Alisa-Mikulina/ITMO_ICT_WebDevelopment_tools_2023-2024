@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../multiprocessing/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../../task2/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
     
       
-        <title>Лабораторные работы</title>
+        <title>Calculate threading - Лабораторные работы</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -42,18 +46,29 @@
       
     
     
-      <link rel="stylesheet" href="/css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="/css/palette.scss">
+      <link rel="stylesheet" href="../../../css/palette.scss">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#calculate-threading" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +106,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/." title="Лабораторные работы" class="md-header__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы" class="md-header__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Calculate threading
             
           </span>
         </div>
@@ -179,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Лабораторные работы" class="md-nav__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы" class="md-nav__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -236,7 +256,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/" class="md-nav__link ">
+            <a href="../../../lab1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -296,7 +316,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr1/" class="md-nav__link ">
+            <a href="../../../lab1/pr1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -328,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr1/main/" class="md-nav__link">
+      <a href="../../../lab1/pr1/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr1/models/" class="md-nav__link">
+      <a href="../../../lab1/pr1/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +428,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr2/" class="md-nav__link ">
+            <a href="../../../lab1/pr2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -440,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr2/main/" class="md-nav__link">
+      <a href="../../../lab1/pr2/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr2/models/" class="md-nav__link">
+      <a href="../../../lab1/pr2/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr2/connection/" class="md-nav__link">
+      <a href="../../../lab1/pr2/connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +560,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr3/" class="md-nav__link ">
+            <a href="../../../lab1/pr3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -572,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/main/" class="md-nav__link">
+      <a href="../../../lab1/pr3/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/models/" class="md-nav__link">
+      <a href="../../../lab1/pr3/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/connection/" class="md-nav__link">
+      <a href="../../../lab1/pr3/connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +692,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/" class="md-nav__link ">
+            <a href="../../../lab1/laba/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -748,7 +768,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/endpoints/" class="md-nav__link ">
+            <a href="../../../lab1/laba/endpoints/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -780,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/auth/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/book_genre/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/book_genre/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -820,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/books/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/genres/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/genres/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/requests/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/users/" class="md-nav__link">
+      <a href="../../../lab1/laba/endpoints/users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -908,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/main/" class="md-nav__link">
+      <a href="../../../lab1/laba/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/models/" class="md-nav__link">
+      <a href="../../../lab1/laba/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -976,7 +996,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/security/" class="md-nav__link ">
+            <a href="../../../lab1/laba/security/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1008,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/security/jwt_process/" class="md-nav__link">
+      <a href="../../../lab1/laba/security/jwt_process/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/security/password_encoder/" class="md-nav__link">
+      <a href="../../../lab1/laba/security/password_encoder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,6 +1089,8 @@
       
   
   
+    
+  
   
     
     
@@ -1085,17 +1107,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1112,7 +1134,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Laboratory work 2
@@ -1125,6 +1147,8 @@
                 
   
   
+    
+  
   
     
     
@@ -1149,17 +1173,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/task1/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1176,7 +1200,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Task 1
@@ -1191,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task1/async/" class="md-nav__link">
+      <a href="../async/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1211,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task1/multiprocessing/" class="md-nav__link">
+      <a href="../multiprocessing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1229,9 +1253,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/lab2/task1/threading/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1240,6 +1273,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1291,7 +1325,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/task2/" class="md-nav__link ">
+            <a href="../../task2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1323,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/async/" class="md-nav__link">
+      <a href="../../task2/async/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1343,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/multiprocessing/" class="md-nav__link">
+      <a href="../../task2/multiprocessing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1363,7 +1397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/threading/" class="md-nav__link">
+      <a href="../../task2/threading/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1409,6 +1443,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1420,8 +1456,83 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="calculate-threading">Calculate threading</h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[Running] python -u &quot;c:\Users\Alice\Desktop\shara\ITMO\Web 2 sem\local\Lab2\task1\calc_threading.py&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Calculation Result: 8000002000000
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Correct result (by formula): 8000002000000
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Is result correct: yes
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Calculation time: 229.114 ms
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>import threading as thr
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>import time
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>import sys
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>lock = thr.Lock()
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>result = 0
+</code></pre></div>
+Эта функция рекурсивно вычисляет сумму чисел в диапазоне от start до end. Если диапазон слишком мал (100,000 или меньше), она вычисляет сумму напрямую. В противном случае она разделяет диапазон пополам, создает два дочерних потока для вычисления суммы в каждой половине, ждет их завершения, а затем суммирует результаты.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>def calculate_sum(start: int, end: int):
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    global result
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    # Process simple cases
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    if end &lt; start:
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        raise Exception(&quot;Incorrect input&quot;)
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    elif end - start &lt;= 100000:
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        # Use lock to modify global result variable
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        cur_sum = sum(range(start, end + 1))
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        with lock:
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>            result += cur_sum
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        return cur_sum
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    # Split range into two halves
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    half = (end + start) // 2
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    threads = [
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        thr.Thread(target=calculate_sum, args=(start, half)),
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        thr.Thread(target=calculate_sum, args=(half + 1, end))
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    ]
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    # Start threads
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    for thread in threads:
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        thread.start()
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    # Join threads, wait until they ends
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    for thread in threads:
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>        thread.join()
+</code></pre></div>
+Этот блок кода является точкой входа программы. Он:<br />
+- Получает входное значение calc_end из аргументов командной строки, если оно предоставлено, в противном случае использует значение по умолчанию 4,000,000.<br />
+- Вызывает функцию calculate_sum(1, calc_end) для вычисления суммы.<br />
+- Вычисляет правильный результат с помощью формулы (calc_end * (calc_end + 1)) // 2.<br />
+- Выводит вычисленный результат, правильный ответ и время выполнения вычислений.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>if __name__ == &#39;__main__&#39;:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    if len(sys.argv) &gt; 1 and sys.argv[1].isdigit():
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        calc_end = int(sys.argv[1])
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    else:
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        calc_end = 4_000_000
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    start_time = time.time()
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    calculate_sum(1, calc_end)
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    end_time = time.time()
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    print(&quot;Calculation Result:&quot;, result)
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    formula_result = (calc_end * (calc_end + 1)) // 2
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    print(&quot;Correct result (by formula):&quot;, formula_result)
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    print(&quot;Is result correct:&quot;, &quot;yes&quot; if result == formula_result else &quot;no&quot;)
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    print(f&quot;Calculation time: {(end_time - start_time) * 1000:.3f} ms&quot;)
+</code></pre></div></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1454,11 +1565,11 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.indexes", "content.code.copy"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.81fa17fe.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

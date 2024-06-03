@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../models/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
     
       
-        <title>Лабораторные работы</title>
+        <title>main.py - Лабораторные работы</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -42,18 +46,29 @@
       
     
     
-      <link rel="stylesheet" href="/css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="/css/palette.scss">
+      <link rel="stylesheet" href="../../../css/palette.scss">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mainpy" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +106,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/." title="Лабораторные работы" class="md-header__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы" class="md-header__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              main.py
             
           </span>
         </div>
@@ -179,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Лабораторные работы" class="md-nav__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы" class="md-nav__button md-logo" aria-label="Лабораторные работы" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -206,6 +226,8 @@
       
   
   
+    
+  
   
     
     
@@ -226,17 +248,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -253,7 +275,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Laboratory work 1
@@ -296,7 +318,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr1/" class="md-nav__link ">
+            <a href="../../pr1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -328,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr1/main/" class="md-nav__link">
+      <a href="../../pr1/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr1/models/" class="md-nav__link">
+      <a href="../../pr1/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -374,6 +396,8 @@
                 
   
   
+    
+  
   
     
     
@@ -398,17 +422,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -425,7 +449,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_3">
             <span class="md-nav__icon md-icon"></span>
             Practice 2
@@ -438,9 +462,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/lab1/pr2/main/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -449,6 +482,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -460,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr2/models/" class="md-nav__link">
+      <a href="../models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr2/connection/" class="md-nav__link">
+      <a href="../connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +574,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/pr3/" class="md-nav__link ">
+            <a href="../../pr3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -572,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/main/" class="md-nav__link">
+      <a href="../../pr3/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/models/" class="md-nav__link">
+      <a href="../../pr3/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/pr3/connection/" class="md-nav__link">
+      <a href="../../pr3/connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +706,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/" class="md-nav__link ">
+            <a href="../../laba/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -748,7 +782,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/endpoints/" class="md-nav__link ">
+            <a href="../../laba/endpoints/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -780,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/auth/" class="md-nav__link">
+      <a href="../../laba/endpoints/auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/book_genre/" class="md-nav__link">
+      <a href="../../laba/endpoints/book_genre/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -820,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/books/" class="md-nav__link">
+      <a href="../../laba/endpoints/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/genres/" class="md-nav__link">
+      <a href="../../laba/endpoints/genres/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/requests/" class="md-nav__link">
+      <a href="../../laba/endpoints/requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/endpoints/users/" class="md-nav__link">
+      <a href="../../laba/endpoints/users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -908,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/main/" class="md-nav__link">
+      <a href="../../laba/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/models/" class="md-nav__link">
+      <a href="../../laba/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -976,7 +1010,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab1/laba/security/" class="md-nav__link ">
+            <a href="../../laba/security/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1008,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/security/jwt_process/" class="md-nav__link">
+      <a href="../../laba/security/jwt_process/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/laba/security/password_encoder/" class="md-nav__link">
+      <a href="../../laba/security/password_encoder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1095,7 +1129,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/" class="md-nav__link ">
+            <a href="../../../lab2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1159,7 +1193,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/task1/" class="md-nav__link ">
+            <a href="../../../lab2/task1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1191,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task1/async/" class="md-nav__link">
+      <a href="../../../lab2/task1/async/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1211,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task1/multiprocessing/" class="md-nav__link">
+      <a href="../../../lab2/task1/multiprocessing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1231,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task1/threading/" class="md-nav__link">
+      <a href="../../../lab2/task1/threading/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1291,7 +1325,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/lab2/task2/" class="md-nav__link ">
+            <a href="../../../lab2/task2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1323,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/async/" class="md-nav__link">
+      <a href="../../../lab2/task2/async/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1343,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/multiprocessing/" class="md-nav__link">
+      <a href="../../../lab2/task2/multiprocessing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1363,7 +1397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/task2/threading/" class="md-nav__link">
+      <a href="../../../lab2/task2/threading/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1409,6 +1443,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1420,8 +1456,131 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="mainpy">main.py</h1>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>from typing_extensions import TypedDict
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>import uvicorn
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>from fastapi import Depends, FastAPI, HTTPException
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>from sqlmodel import select
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>from connection import get_session
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>from models import *
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>app = FastAPI()
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>@app.post(&quot;/warrior&quot;)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>def warriors_create(warrior: WarriorDefault, session=Depends(get_session)) -&gt; TypedDict(
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    &#39;Response&#39;, {
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        &quot;status&quot;: int,
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        &quot;data&quot;: Warrior
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    }
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>): # type: ignore
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    warrior = Warrior.model_validate(warrior)
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    session.add(warrior)
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    session.commit()
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    session.refresh(warrior)
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    return {&quot;status&quot;: 200, &quot;data&quot;: warrior}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>@app.get(&quot;/warriors_list&quot;)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>def warriors_list(session=Depends(get_session)) -&gt; List[Warrior]:
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    return session.exec(select(Warrior)).all()
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>@app.get(&quot;/skills_list&quot;)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>def skills_list(session=Depends(get_session)) -&gt; List:
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    data = session.exec(select(Skill)).all()
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    return data
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>@app.post(&quot;/skills_create&quot;)
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>def skill_create(skill: Skill, session=Depends(get_session)) -&gt; TypedDict(
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    &#39;Response&#39;,
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    {&quot;status&quot;: int, &quot;data&quot;: Skill}
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>): # type: ignore
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    skill = Skill.model_validate(skill)
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    session.add(skill)
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    session.commit()
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    session.refresh(skill)
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    return {&quot;status&quot;: 200, &quot;data&quot;: skill}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>@app.post(&quot;/warrior_adv_skill&quot;)
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>def warrior_adv_skill(row: SkillWarriorLink, session=Depends(get_session)) -&gt; TypedDict(
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    &#39;Response&#39;, {
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        &quot;status&quot;: int,
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        &quot;data&quot;: SkillWarriorLink
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    }
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>): # type: ignore
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    row = SkillWarriorLink.model_validate(row)
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    session.add(row)
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    session.commit()
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    session.refresh(row)
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    return {&quot;status&quot;: 200, &quot;data&quot;: row}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>@app.get(&quot;/warrior/{warrior_id}&quot;, response_model=WarriorDetails)
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>def warriors_get(warrior_id: int, session=Depends(get_session)):
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    warrior = session.get(Warrior, warrior_id)
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    return warrior
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>@app.delete(&quot;/warrior/delete{warrior_id}&quot;)
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>def warrior_delete(warrior_id: int, session=Depends(get_session)):
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    warrior = session.get(Warrior, warrior_id)
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    if not warrior:
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        raise HTTPException(status_code=404, detail=&quot;Warrior not found&quot;)
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    session.delete(warrior)
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    session.commit()
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    return {&quot;ok&quot;: True}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>@app.patch(&quot;/warrior{warrior_id}&quot;)
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>def warrior_update(
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    warrior_id: int,
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    warrior: WarriorDefault,
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    session=Depends(get_session)
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>) -&gt; WarriorDefault:
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    db_warrior = session.get(Warrior, warrior_id)
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    if not db_warrior:
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>        raise HTTPException(status_code=404, detail=&quot;Warrior not found&quot;)
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    warrior_data = warrior.model_dump(exclude_unset=True)
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    for key, value in warrior_data.items():
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        setattr(db_warrior, key, value)
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    session.add(db_warrior)
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    session.commit()
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    session.refresh(db_warrior)
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    return db_warrior
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>@app.get(&quot;/professions_list&quot;)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>def professions_list(session=Depends(get_session)) -&gt; List[Profession]:
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    return session.exec(select(Profession)).all()
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>@app.get(&quot;/profession/{profession_id}&quot;)
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>def profession_get(profession_id: int, session=Depends(get_session)) -&gt; Profession:
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    return session.get(Profession, profession_id)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>@app.post(&quot;/profession&quot;)
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>def profession_create(prof: Profession, session=Depends(get_session)) -&gt; TypedDict(
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    &#39;Response&#39;, {
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        &quot;status&quot;: int,
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        &quot;data&quot;: Profession
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    }
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>): # type: ignore
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    prof = Profession.model_validate(prof)
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    session.add(prof)
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    session.commit()
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    session.refresh(prof)
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    return {&quot;status&quot;: 200, &quot;data&quot;: prof}
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    uvicorn.run(app, host=&quot;localhost&quot;, port=8000)
+</code></pre></div></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1454,11 +1613,11 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.indexes", "content.code.copy"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.81fa17fe.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
